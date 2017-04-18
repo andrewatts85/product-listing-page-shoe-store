@@ -1,10 +1,6 @@
 /* use w/ css reset normalize */
 /* grid engine */
 /* mobile first approach w/ stacking columns */
-* {
-  font-family: arial;
-}
-
 .row {
   display: flex;
   flex-direction: row;
