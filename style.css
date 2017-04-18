@@ -1,0 +1,318 @@
+/* use w/ css reset normalize */
+/* grid engine */
+/* mobile first approach w/ stacking columns */
+.row {
+  display: flex;
+  flex-direction: row;
+  max-width: 70em;
+  margin: 0 auto;
+  
+}
+
+.col {
+  flex: 1;
+}
+
+/* custom styles */
+.container {
+  margin: 0 auto;
+  /*max-width: 70em;*/
+  /*padding: 0 2em;*/
+  
+}
+
+p {
+  text-align: right;
+  margin: 0;
+  color: gray;
+}
+
+/* .nav styles */
+.nav {
+  /*padding: 0 1em;*/
+  border: .063em solid gainsboro;
+  border-top: .4em solid red;
+}
+ 
+.nav img {
+  height: 6em;
+  /*border: .063em solid black;*/
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav ul li {
+  float: left;
+  padding: .3em .7em;
+  /*border: .063em solid lightgray;*/
+  /*margin-left: 1em;*/
+  align-self: center;
+}
+
+.nav ul li:nth-child(3) {
+  border-left: .063em solid lightgray;
+  border-right: .063em solid lightgray;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: dimgray;
+}
+/*
+.nav ul li:hover {
+  border-bottom: .063em solid black;
+}
+*/
+.nav ul li:first-child {
+  width: 20em;
+  border: none;
+}
+
+.nav > .col {
+  padding: 0 1em;
+}
+
+.nav .col:nth-child(2) {
+  align-self: center;
+  /*border-left: .063em solid lightgray;*/
+  /*flex-grow: 1;*/
+}
+
+.nav input[type="text"] {
+  width: 100%;
+
+}
+
+.nav input[type="submit"] {
+  /*height: 1.45em;*/
+  color: dimgray;
+}
+
+/* .banner */
+.banner img{
+  height: 25em;
+  width: 100%;
+}
+
+.content {
+  justify-content: space-between;
+  margin-top: 1.3em;
+  border: .063em solid lightgray;
+  
+}
+
+.row:nth-child(5) {
+  /*display: flex;*/
+  flex-direction: row-reverse;
+}
+
+
+.content .product {
+  /*border: .063em solid lightgray;*/
+  padding: 1em 1em 0 1em;
+  margin: .5em;
+  /*overflow: hidden;*/
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.product img {
+  height: 11em;
+  width: 100%;
+}
+
+.product h3 {
+  color: red;
+}
+
+.product h4 {
+  margin: .3em 0;
+}
+
+.product input {
+  color: red;
+  background-color: white;
+  border: .1em solid red;
+  border-radius: .1em;
+  padding: .2em;
+  width: 100%;
+  margin-top: auto;
+}
+
+.product input:hover {
+  color: white;
+  background-color: red;
+}
+
+.row:nth-child(6) {
+  margin-bottom: 2.5em;
+}
+
+/* sticky footer */
+body {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+}
+  
+.footer {
+  margin-top: auto;
+  background-color: black;
+  color: silver;
+}
+/* end sticky footer */
+
+.footer .col {
+  /*border: .063em solid red;*/
+  /*text-align: center;*/
+  /*padding-left: 1em;*/
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer ul li a {
+  font-size: .7em;
+  text-decoration: none;
+  color: gray;
+}
+
+.footer ul li a:hover {
+  color: white;
+}
+
+.footer input[type="text"] {
+  width: 60%;
+  box-sizing: border-box;
+  padding-left: .2em;
+}
+
+.footer input[type="submit"] {
+  color: dimgray;
+  
+}
+
+/* shopping cart */
+.cart, .totals, .checkout {
+  display: none;
+}
+
+.cart table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.cart table tr th:last-child {
+  border-left: none;
+}
+
+.cart table tr th:nth-child(4) {
+  border-right: none;
+}
+
+.cart td, .cart th {
+  border: .063em solid gainsboro;
+  text-align: left;
+  padding: .3em;
+}
+
+.cart th {
+  border-top: .2em solid red;
+}
+
+.cart table tbody td p {
+  text-align: left;
+}
+
+.cart table td img {
+  height: 3em;
+}
+
+.cart table td input {
+  width: 2em;
+}
+
+.cart table td:last-child, .cart table td:nth-child(3) {
+  text-align: center;
+}
+
+.totals {
+  margin: 0;
+  /*border-bottom: .063em solid lightgray;*/
+  
+}
+
+.totals .col {
+  margin-bottom: .5em;
+}
+
+.totals .col p:nth-child(2) {
+  margin: .3em 0 .3em 0;
+}
+
+.checkout {
+  margin: 0 0 3em 0;
+  /*border-top: .063em solid lightgray;*/
+}
+
+.checkout .line {
+  border-top: .063em solid lightgray;
+  padding-top: 1em;
+}
+
+
+.checkout .col:first-child input {
+  width: 100%;
+}
+
+.checkout .col:first-child input[type="button"] {
+  float: left;
+  width: 6em;
+}
+
+.checkout input, .checkout button {
+  color: dimgray;
+}
+
+.checkout .col:nth-child(2), .checkout .col:nth-child(3) {
+  text-align: right;
+}
+
+.cart, .totals, .checkout {
+  padding: 0 1.5em 0 1.5em;
+}
+
+.totals .col:first-child {
+  flex-grow: 1;
+  border: 1px solid lightgray;
+  border-right: none;
+  padding-right: .3em;
+}
+
+.totals .col:last-child {
+  flex-grow: .11;
+  border: 1px solid lightgray;
+  /*border-left: none;*/
+  /*padding-right: .3em;*/
+}
+
+.show {
+  display: flex;
+}
+
+.dontShow {
+  display: none;
+}
+
+/* devices 400px wide or more *//*
+@media screen and (min-width: 400px) {
+	.row {
+    flex-direction: row;
+  }
+}
+*/
