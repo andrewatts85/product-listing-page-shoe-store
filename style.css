@@ -39,6 +39,10 @@ p {
   /*border: .063em solid black;*/
 }
 
+body {
+  font-family: Arial;
+}
+
 .nav ul {
   list-style-type: none;
   display: flex;
