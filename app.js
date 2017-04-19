@@ -28,7 +28,7 @@ var register = {
 };
 
 container.addEventListener("click", function(e) {
-  if (e.target && e.target.nodeName == "INPUT") {
+  if (e.target && e.target.value == "add to cart") {
     // show shopping cart
     /*
     shoppingCart.style.display = "flex";
